@@ -1,26 +1,29 @@
 /* branding color #7DAF96 */
-
+/* redwood photo Photo by <a href="https://unsplash.com/@dmey503?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dan Meyers</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
 * {
-  background-color: #fffbf8;
+  background-color: transparent;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: "futura-pt";
+  font-family: "futura-pt", sans-serif;
+  font-style: normal;
+  font-weight: 300;
   color: #4b5452;
+  font-size: 18pt;
 }
 
 h1,
-h2,
-h3 {
-  font-family: "futura-pt", sans-serif;
-  font-style: normal;
+h2 {
+  font-family: "Playfair Display";
   font-weight: 800;
   background: transparent;
 }
 
 h1 {
+  font-family: "Playfair Display";
   font-size: 64px;
   letter-spacing: -2px;
   line-height: 100px;
@@ -30,9 +33,11 @@ h1 {
 h2 {
   font-size: 40px;
   font-weight: 400;
+  font-family: "Playfair Display";
 }
 
 h3 {
+  font-weight: 400;
   font-size: 24px;
   letter-spacing: 2px;
 }
@@ -43,136 +48,137 @@ ul {
   padding: 0;
 }
 
-/* Navigation */
+.arrow {
+  border: solid #fffbf8;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  align-self: flex-end;
+}
 
+/* landing page */
+.landing-page {
+  background-image: url("content/641kb-forest-dan-meyers.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navigation */
 .navigation {
   font-size: 22px;
+  width: 100vh;
   display: flex;
-  align-items: stretch;
+  justify-content: flex-start;
   gap: 1.5%;
-  background-color: #7daf96;
+  color: #4b5452;
+  padding: 3% 2% 3% 2%;
 }
 
 .nav-logo,
 .nav-links,
 .nav-socials {
   display: flex;
-  gap: 15px;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1% 3% 0.5% 3%;
-  /* filter: drop-shadow(8px 5px 10px #4b5452); */
-  color: #fff9f1;
 }
 
 .nav-logo {
-  background-color: #7daf96;
+  height: 1080px;
 }
 
-img {
-  background: transparent;
-}
 .nav-name {
-  background-color: #7daf96;
   font-family: "Playfair Display";
 }
 
 .nav-links {
-  background-color: #7daf96;
   flex: 2;
   border-radius: 0 0 40px 40px;
 }
 
 .nav-links ul {
-  background-color: #7daf96;
   justify-content: center;
   gap: 5%;
-  flex: 1;
-}
-
-.nav-links ul .page {
-  background-color: #7daf96;
+  flex: 2;
 }
 
 .nav-socials {
-  background-color: #7daf96;
   border-radius: 0 0 0px 40px;
 }
 
 .nav-socials ul {
-  background-color: #7daf96;
   gap: 10%;
   display: flex;
   justify-content: space-around;
 }
 
-.nav-socials ul .test {
-  background-color: #7daf96;
-  color: #4b5452;
+/* hero page */
+.hero-logo {
+  width: 23%;
+  padding: 5%;
 }
 
-/* photo and intro */
+/* introduction */
 .intro {
+  background-color: #eaeceb;
+  /* #D4D6D5 */
   display: flex;
   justify-content: center;
-  justify-items: center;
   align-items: flex-end;
-  margin: 11%;
-  height: 790px;
+  justify-content: center;
+  height: 600px;
+  padding: 3% 20%;
+  gap: 10%;
 }
 
-.intro-photo {
-  max-width: 100%;
-  height: auto;
-  position: absolute;
-  top: 20%;
-  left: 200px;
-  z-index: 3;
-  background: transparent;
+.my-photo {
+  width: auto;
+  height: 60vh;
+  transform: scaleX(-1);
 }
 
-.intro-photo img {
-  border-radius: 40px;
-  background: transparent;
-  filter: drop-shadow(8px 5px 10px #4b5452);
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  height: 100%;
+  text-align: left;
+  /* position: absolute; */
 }
 
-.intro-box {
-  display: block;
-  background-color: #7daf96;
-  border-radius: 60px;
-  padding-left: 600px;
-  padding-right: 45px;
-  width: 1500px;
-  height: 60%;
-  position: relative;
-  color: #fff9f1;
-  filter: drop-shadow(8px 5px 10px #4b5452);
+.intro-text h1 {
+  padding-bottom: 5%;
 }
 
-.intro-box h1 {
-  padding-top: 8%;
-}
-
-.intro-box h2 {
-  padding-top: 8%;
+.intro-text h3 {
   padding-bottom: 3%;
 }
 
-.intro-box h3 {
-  font-size: 18px;
-  background-color: #7daf96;
-  font-family: "gill-sans-nova";
-  font-weight: 300;
+/* tools */
+
+.tools {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 50px;
+  padding: 3% 20%;
+  width: 1100px;
 }
 
-/* .intro-box {
-  display: inline-block;
-  background-color: #679186;
-  border-radius: 40px;
-  width: 800px;
-  height: 400px;
-  transform: translateX(-140px);
-} */
+.tools-list ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-around;
+}
 
-/* tools */
+.tools-figma,
+.tools-html,
+.tools-javascript,
+.tools-css {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
